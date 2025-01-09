@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ec08dda41c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <img src="me_pic1.jpg" alt="Background Image" class="right-half">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I am <span>Hashem</span><br>Bader from Jordan</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------about me--------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="me_pic2.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1>About Me</h1><br>
+                    <p>I am a third-year Computer Science student with a 3.9 GPA and a strong
+                    foundation in programming languages, including Java, Python, C, and JavaScript. With hands-on experience designing
+                    and implementing a database for managing employees, I excel at problem-solving, debugging, and collaborating
+                    in team projects. My passion lies in leveraging my skills to design efficient and user-friendly software solutions while
+                    maintaining a balance of technical proficiency and clear communication. I am eager to contribute to innovative projects
+                    and expand my expertise in software development and system programming.</p>
+
+                    <div class="tab-titles">
+                        <p class = "tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class = "tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class = "tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Software</span><br>Object-Oriented Programming, System Programming, Diverse Applications</li>
+                            <li><span>Problem-Solving</span><br>Enhanced knowledge of developing effective test cases and testing methods</li>
+                            <li><span>Communication Skills</span><br>Engaged in team discussions to plan the development roadmap</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>September 2024 - May 2024</span><br>UPEI CS Help Centre, Charlottetown, PE</li>
+                            <li><span>September 2023 - present</span><br>UPEI Fitness Centre, Charlottetown, PE</li>
+                            <li><span>June 2023 - September 2024</span><br>Superstore, Charlottetown, PE</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022 - present</span><br>Bachelor of Science, Major: Computer Science<br>
+                                University of Prince Edward Island, Charlottetown, PE</li>
+                            <li><span>Relevant Coursework:</span><br>Machine Learning, Database Management, Data Structures,
+                                 Algorithms, Software Development</li>
+                            <li><span>Dean’s List 2022-2023</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------services--------------------- -->
+     <div id="services"> 
+        <div class="container"> 
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Problem Solving and Algorithm Design</h2>
+                    <p>I specialize in solving algorithmic problems, writing efficient code, and optimizing performance for complex tasks.</p>
+                    
+                </div>
+                <div>
+                    <h2>Backend Development</h2>
+                    <p>I build secure and scalable backend solutions using Python or Java, integrating databases like MySQL.</p>
+                    
+                </div>
+                <div>
+                    <h2>Data Analysis and Visualization</h2>
+                    <p>I analyze data using Python and visualize insights through tools like Matplotlib or Seaborn.</p>
+                    
+                </div>
+            </div>
+        </div>
+     </div>
+     <!-- ---------------------portfolio--------------------- -->
+      <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-1.png">
+                    <div class="layer">
+                        <h3>Data Analysis</h3>
+                        <p>I did Data Analysis in python to evaluate strategies in the Monopoly game. Leveraged candlestick
+                        visualizations to examine trends in player strategies and their ability to acquire properties across the game board.</p>
+                        <a href="https://github.com/HashemBader/Monopoly-Game">View Details</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.png">
+                    <div class="layer">
+                        <h3>Object-Oriented Programming</h3>
+                        <p>Developed a fully functional Monopoly game using Java, showcasing object-oriented programming principles.
+                        Implemented features such as player turns, property management, and custom rules, emphasizing encapsulation,
+                        inheritance, and polymorphism.</p>
+                        <a href="https://github.com/HashemBader/Monopoly-Game">View Details</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-3.png">
+                    <div class="layer">
+                        <h3>Data Base</h3>
+                        <p>Developed a Python-based database system to manage employees. Enabled functionality to add or remove
+                        employees, verify their presence in the system, and retrieve department details efficiently.</p>
+                        <a href="https://github.com/HashemBader/Database-Students">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/HashemBader" class="btn">See more</a>
+        </div>
+      </div>
+      <!-- ---------------------contact--------------------- -->
+       <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> hlbader@upei.ca</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 9023143268</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/hashem-bader-7b25092b7/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/HashemBader"><i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                    <a href="COOP RESUME final edited SD.pdf" class="btn btn2"> Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your-Message" ></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+       </div>
+        
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+        }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz2oJCkbjGhvoOhRxd7uEl4os3EBW5qGWOcFn1ZgGoNZQjxz-zXcqOVDeO5ORgiISXZtg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById('msg')
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      msg.innerHTML = "Sending message...";
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },1000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
